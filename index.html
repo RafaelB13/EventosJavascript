@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .corpo {
+            margin: 0 auto;
+            margin-top: 200px;
+            width: 600px;
+            height: 600px;
+            background-color: #8f8c8c;
+            border-style: ridge;
+        }
+        
+        .title {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-weight: 100;
+            font-size: 2em;
+        }
+        
+        .btn {
+            background: #af4444;
+            color: #ffffff;
+            margin: 0 auto;
+            border-radius: 1px 1px;
+            margin: 5px;
+            width: 30%;
+            height: 30px;
+        }
+        
+        .textoGerado {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-weight: 100;
+            margin-top: 20%;
+            font-size: 2em;
+        }
+        
+        .texto {
+            margin-left: 25%;
+            width: 50%;
+            height: 10%;
+        }
+    </style>
+
+    <script>
+        function gerarTexto1() {
+
+            if (document.getElementById("demo1").innerHTML == "Texto gerado") {
+
+                document.getElementById("demo1").style.color = "white";
+                document.getElementById("myP").style.fontWeight = "500"
+
+                document.getElementById("myP").innerHTML = "Cor Alterada"
+
+
+
+            } else {
+                document.getElementById("myP").innerHTML = "Clique em Gerar Texto"
+            }
+
+
+
+
+        }
+
+        function gerarTexto2() {
+            var x = "Texto gerado"
+            document.getElementById("demo1").innerHTML = x;
+            document.getElementById("myP").innerHTML = "Gerar Texto Clicado";
+        }
+
+        function limpar() {
+            if (document.getElementById("demo1").innerHTML == "" && document.getElementById("myP").innerHTML == "") {
+                alert("Nada a ser limpo")
+            } else {
+
+                document.getElementById("demo1").innerHTML = ""
+                document.getElementById("demo1").style.color = ""
+                document.getElementById("myP").innerHTML = "Limpo"
+            }
+
+            if (document.getElementById("myP").innerHTML == "Limpo") {
+                alert("Nada a ser Limpo1")
+
+                document.getElementById("myP").innerHTML = ""
+            }
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <div class="corpo">
+        <h3 class="title">Eventos Javascript</h3>
+
+        <button onclick="gerarTexto1()" id="btn1" class="btn">Mudar Cor</button>
+        <button onclick="gerarTexto2()" id="btn2" class="btn">Gerar Texto</button>
+        <button onclick="limpar()" id="btn3" class="btn">Limpar</button>
+
+        <p id="myP" class="textoGerado"></p>
+
+
+        <p id="demo1" class="textoGerado"></p>
+
+    </div>
+
+
+
+</body>
+
+</html>
