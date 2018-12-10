@@ -1,0 +1,39 @@
+.corpo {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 600px;
+    height: 600px;
+    background-color: #8f8c8c;
+    border-style: ridge;
+}
+
+.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.btn {
+    background: #af4444;
+    color: #ffffff;
+    margin: 0 auto;
+    border-radius: 1px 1px;
+    margin: 5px;
+    width: 30%;
+    height: 30px;
+}
+
+.textoGerado {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 20%;
+    font-size: 2em;
+}
+
+.texto {
+    margin-left: 25%;
+    width: 50%;
+    height: 10%;
+}
